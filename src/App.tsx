@@ -6,7 +6,7 @@ function App() {
     <div className="app">
       <header className="app__header">
         <div>
-          <h1 className="app__title">Product Traceability — Ceres Power</h1>
+          <h1 className="app__title">Product Traceability</h1>
           <p className="app__subtitle">
             Data lineage maturity from raw materials through to shipped / in-field product
           </p>
