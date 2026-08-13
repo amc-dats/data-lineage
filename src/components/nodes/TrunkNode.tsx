@@ -14,6 +14,7 @@ const HANDLE_STYLE = {
 export default function TrunkNode({ data, selected }: NodeProps<TrunkNodeType>) {
   const topCount = data.tributaryHandleCountTop ?? 0;
   const bottomCount = data.tributaryHandleCountBottom ?? 0;
+  const levelColor = data.level === 2 ? 'var(--level-2-line)' : 'var(--level-1-line)';
 
   return (
     <div
@@ -21,7 +22,7 @@ export default function TrunkNode({ data, selected }: NodeProps<TrunkNodeType>) 
       style={{
         background: statusFill(data.status),
         color: statusInk(data.status),
-        outline: selected ? '3px solid var(--text-primary)' : '1px solid var(--border-hairline)',
+        outline: selected ? `4px solid var(--text-primary)` : `3px solid ${levelColor}`,
         outlineOffset: selected ? '2px' : '0',
       }}
     >

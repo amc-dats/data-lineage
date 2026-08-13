@@ -15,6 +15,12 @@ export default function Legend() {
       </div>
 
       <div className="legend__group">
+        <p className="legend__heading">Data domain</p>
+        <LegendOutlineSwatch color="var(--level-1-line)" label="Level 1" />
+        <LegendOutlineSwatch color="var(--level-2-line)" label="Level 2" />
+      </div>
+
+      <div className="legend__group">
         <p className="legend__heading">Tributary source</p>
         <div className="legend__row">
           <span className="legend__icon" aria-hidden="true">⚙</span>
@@ -35,6 +41,15 @@ function LegendSwatch({ color, label }: { color: string; label: string }) {
   return (
     <div className="legend__row">
       <span className="legend__swatch" style={{ background: color }} />
+      <span>{label}</span>
+    </div>
+  );
+}
+
+function LegendOutlineSwatch({ color, label }: { color: string; label: string }) {
+  return (
+    <div className="legend__row">
+      <span className="legend__swatch" style={{ background: 'var(--surface)', border: `3px solid ${color}` }} />
       <span>{label}</span>
     </div>
   );

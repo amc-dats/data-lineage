@@ -16,6 +16,8 @@ export interface LineageNodeData {
   tributaryKind?: TributaryKind;
   /** Trunk node this tributary feeds into (tributary nodes only). */
   parentTrunk?: string;
+  /** Ladder level the trunk backbone sits on (1 = upper row, 2 = stepped-down row). Trunk nodes only. */
+  level?: 1 | 2;
   label: string;
   status: Status;
   position: { x: number; y: number };

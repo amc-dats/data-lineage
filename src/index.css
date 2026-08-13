@@ -19,6 +19,10 @@
   --status-red: #d03b3b;
   --status-red-ink: #ffffff;
 
+  /* Trunk ladder level outline colors */
+  --level-1-line: #6d28d9;
+  --level-2-line: #b8460e;
+
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
