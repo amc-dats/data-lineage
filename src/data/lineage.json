@@ -1,0 +1,162 @@
+{
+  "nodes": [
+    {
+      "id": "raw-materials",
+      "kind": "trunk",
+      "label": "Raw Materials",
+      "status": "green",
+      "position": { "x": 0, "y": 320 },
+      "detail": {
+        "epicTitle": "Raw Material Batch Traceability",
+        "epicStatus": "Fully built & usable",
+        "quarter": "Q4 FY24"
+      }
+    },
+    {
+      "id": "cell-manufacturing",
+      "kind": "trunk",
+      "label": "Cell Manufacturing",
+      "status": "amber",
+      "position": { "x": 600, "y": 320 },
+      "detail": {
+        "epicTitle": "Cell Line MES Data Capture",
+        "epicStatus": "Actively being worked on",
+        "quarter": "Q3 FY25"
+      }
+    },
+    {
+      "id": "stack-assembly",
+      "kind": "trunk",
+      "label": "Stack Assembly",
+      "status": "amber",
+      "position": { "x": 1200, "y": 320 },
+      "detail": {
+        "epicTitle": "Stack Build Genealogy Pipeline",
+        "epicStatus": "Actively being worked on",
+        "quarter": "Q3 FY25"
+      }
+    },
+    {
+      "id": "stack-test",
+      "kind": "trunk",
+      "label": "Stack Test",
+      "status": "green",
+      "position": { "x": 1800, "y": 320 },
+      "detail": {
+        "epicTitle": "Automated Test Rig Data Feed",
+        "epicStatus": "Fully built & usable",
+        "quarter": "Q1 FY25"
+      }
+    },
+    {
+      "id": "shipped-in-field",
+      "kind": "trunk",
+      "label": "Shipped / In Field",
+      "status": "red",
+      "position": { "x": 2400, "y": 320 },
+      "detail": {
+        "epicTitle": "Field Performance Telemetry Link",
+        "epicStatus": "Data pipeline does not exist",
+        "quarter": "Q1 FY26"
+      }
+    },
+
+    { "id": "raw-materials-internal-inspection", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "raw-materials", "label": "Internal Inspection", "status": "green", "position": { "x": -180, "y": 180 }, "detail": { "epicTitle": "Goods-In QC Digitisation", "epicStatus": "Fully built & usable", "quarter": "Q4 FY24" } },
+    { "id": "raw-materials-supplier-inspection", "kind": "tributary", "tributaryKind": "supplier", "parentTrunk": "raw-materials", "label": "Supplier Inspection", "status": "amber", "position": { "x": 0, "y": 180 }, "detail": { "epicTitle": "Supplier Certificate of Analysis Ingestion", "epicStatus": "Actively being worked on", "quarter": "Q4 FY25" } },
+    { "id": "raw-materials-machine-data", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "raw-materials", "label": "Machine Data", "status": "amber", "position": { "x": 180, "y": 180 }, "detail": { "epicTitle": "Goods-In Handling Equipment Telemetry", "epicStatus": "Actively being worked on", "quarter": "Q2 FY26" } },
+    { "id": "raw-materials-concessions", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "raw-materials", "label": "Concessions", "status": "green", "position": { "x": -180, "y": 470 }, "detail": { "epicTitle": "Raw Material Concession Log Integration", "epicStatus": "Fully built & usable", "quarter": "Q4 FY24" } },
+    { "id": "raw-materials-dq", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "raw-materials", "label": "DQ", "status": "amber", "position": { "x": 0, "y": 470 }, "detail": { "epicTitle": "Raw Material Data Quality Reconciliation", "epicStatus": "Actively being worked on", "quarter": "Q1 FY26" } },
+    { "id": "raw-materials-technical-issues", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "raw-materials", "label": "Technical Issues", "status": "red", "position": { "x": 180, "y": 470 }, "detail": { "epicTitle": "Raw Material NCR Ticket Linkage", "epicStatus": "Data pipeline does not exist", "quarter": "Q3 FY26" } },
+
+    { "id": "cell-manufacturing-internal-inspection", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "cell-manufacturing", "label": "Internal Inspection", "status": "amber", "position": { "x": 510, "y": 180 }, "detail": { "epicTitle": "In-Process Cell QC Capture", "epicStatus": "Actively being worked on", "quarter": "Q3 FY25" } },
+    { "id": "cell-manufacturing-machine-data", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "cell-manufacturing", "label": "Machine Data", "status": "green", "position": { "x": 690, "y": 180 }, "detail": { "epicTitle": "Cell Line Equipment Telemetry Feed", "epicStatus": "Fully built & usable", "quarter": "Q2 FY25" } },
+    { "id": "cell-manufacturing-concessions", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "cell-manufacturing", "label": "Concessions", "status": "amber", "position": { "x": 420, "y": 470 }, "detail": { "epicTitle": "Cell Line Concession Log Integration", "epicStatus": "Actively being worked on", "quarter": "Q3 FY26" } },
+    { "id": "cell-manufacturing-dq", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "cell-manufacturing", "label": "DQ", "status": "red", "position": { "x": 600, "y": 470 }, "detail": { "epicTitle": "Cell Line Data Quality Reconciliation", "epicStatus": "Data pipeline does not exist", "quarter": "Q4 FY26" } },
+    { "id": "cell-manufacturing-technical-issues", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "cell-manufacturing", "label": "Technical Issues", "status": "red", "position": { "x": 780, "y": 470 }, "detail": { "epicTitle": "Cell Line NCR Ticket Linkage", "epicStatus": "Data pipeline does not exist", "quarter": "Q3 FY26" } },
+
+    { "id": "stack-assembly-internal-inspection", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-assembly", "label": "Internal Inspection", "status": "red", "position": { "x": 1110, "y": 180 }, "detail": { "epicTitle": "Assembly Line QC Digitisation", "epicStatus": "Data pipeline does not exist", "quarter": "Q2 FY26" } },
+    { "id": "stack-assembly-machine-data", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-assembly", "label": "Machine Data", "status": "amber", "position": { "x": 1290, "y": 180 }, "detail": { "epicTitle": "Assembly Line Equipment Telemetry Feed", "epicStatus": "Actively being worked on", "quarter": "Q2 FY26" } },
+    { "id": "stack-assembly-concessions", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-assembly", "label": "Concessions", "status": "red", "position": { "x": 1020, "y": 470 }, "detail": { "epicTitle": "Stack Assembly Concession Log Integration", "epicStatus": "Data pipeline does not exist", "quarter": "Q3 FY26" } },
+    { "id": "stack-assembly-dq", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-assembly", "label": "DQ", "status": "amber", "position": { "x": 1200, "y": 470 }, "detail": { "epicTitle": "Stack Assembly Data Quality Reconciliation", "epicStatus": "Actively being worked on", "quarter": "Q1 FY26" } },
+    { "id": "stack-assembly-technical-issues", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-assembly", "label": "Technical Issues", "status": "red", "position": { "x": 1380, "y": 470 }, "detail": { "epicTitle": "Stack Assembly NCR Ticket Linkage", "epicStatus": "Data pipeline does not exist", "quarter": "Q3 FY26" } },
+
+    { "id": "stack-test-internal-inspection", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-test", "label": "Internal Inspection", "status": "green", "position": { "x": 1620, "y": 180 }, "detail": { "epicTitle": "Test Rig QC Cross-Check", "epicStatus": "Fully built & usable", "quarter": "Q1 FY25" } },
+    { "id": "stack-test-internal-test-data", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-test", "label": "Internal Test Data", "status": "green", "position": { "x": 1800, "y": 180 }, "detail": { "epicTitle": "Test Rig Performance Data Capture", "epicStatus": "Fully built & usable", "quarter": "Q1 FY25" } },
+    { "id": "stack-test-machine-data", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-test", "label": "Machine Data", "status": "green", "position": { "x": 1980, "y": 180 }, "detail": { "epicTitle": "Test Rig Equipment Telemetry Feed", "epicStatus": "Fully built & usable", "quarter": "Q1 FY25" } },
+    { "id": "stack-test-concessions", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-test", "label": "Concessions", "status": "green", "position": { "x": 1620, "y": 470 }, "detail": { "epicTitle": "Test Concession Log Integration", "epicStatus": "Fully built & usable", "quarter": "Q1 FY25" } },
+    { "id": "stack-test-dq", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-test", "label": "DQ", "status": "amber", "position": { "x": 1800, "y": 470 }, "detail": { "epicTitle": "Test Rig Data Quality Reconciliation", "epicStatus": "Actively being worked on", "quarter": "Q4 FY25" } },
+    { "id": "stack-test-technical-issues", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "stack-test", "label": "Technical Issues", "status": "amber", "position": { "x": 1980, "y": 470 }, "detail": { "epicTitle": "Test Rig NCR Ticket Linkage", "epicStatus": "Actively being worked on", "quarter": "Q4 FY25" } },
+
+    { "id": "shipped-in-field-partner-test-data", "kind": "tributary", "tributaryKind": "supplier", "parentTrunk": "shipped-in-field", "label": "Partner Test Data", "status": "red", "position": { "x": 2310, "y": 180 }, "detail": { "epicTitle": "Partner Field Test Data Exchange", "epicStatus": "Data pipeline does not exist", "quarter": "Q2 FY26" } },
+    { "id": "shipped-in-field-machine-data", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "shipped-in-field", "label": "Machine Data", "status": "red", "position": { "x": 2490, "y": 180 }, "detail": { "epicTitle": "Field Unit Telemetry Feed", "epicStatus": "Data pipeline does not exist", "quarter": "Q4 FY26" } },
+    { "id": "shipped-in-field-concessions", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "shipped-in-field", "label": "Concessions", "status": "red", "position": { "x": 2220, "y": 470 }, "detail": { "epicTitle": "Field Concession Log Integration", "epicStatus": "Data pipeline does not exist", "quarter": "Q3 FY26" } },
+    { "id": "shipped-in-field-dq", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "shipped-in-field", "label": "DQ", "status": "red", "position": { "x": 2400, "y": 470 }, "detail": { "epicTitle": "Field Data Quality Reconciliation", "epicStatus": "Data pipeline does not exist", "quarter": "Q4 FY26" } },
+    { "id": "shipped-in-field-technical-issues", "kind": "tributary", "tributaryKind": "internal", "parentTrunk": "shipped-in-field", "label": "Technical Issues", "status": "amber", "position": { "x": 2580, "y": 470 }, "detail": { "epicTitle": "Field Returns NCR Ticket Linkage", "epicStatus": "Actively being worked on", "quarter": "Q3 FY26" } }
+  ],
+  "edges": [
+    {
+      "id": "trunk-raw-to-cell",
+      "source": "raw-materials",
+      "target": "cell-manufacturing",
+      "kind": "trunk",
+      "status": "green",
+      "annotation": "Fully automated batch-to-lot handoff from raw material receipt into the cell manufacturing MES. No manual steps."
+    },
+    {
+      "id": "trunk-cell-to-stack",
+      "source": "cell-manufacturing",
+      "target": "stack-assembly",
+      "kind": "trunk",
+      "status": "green",
+      "annotation": "Cell genealogy is automatically carried into the stack assembly build record via the shared MES."
+    },
+    {
+      "id": "trunk-stack-to-test",
+      "source": "stack-assembly",
+      "target": "stack-test",
+      "kind": "trunk",
+      "status": "red",
+      "annotation": "No automated link yet. Build records are currently exported and manually matched to test rig serial numbers by the test team each shift."
+    },
+    {
+      "id": "trunk-test-to-shipped",
+      "source": "stack-test",
+      "target": "shipped-in-field",
+      "kind": "trunk",
+      "status": "red",
+      "annotation": "Shipping and field telemetry systems are not connected to test data. Serial number mapping is tracked in an offline spreadsheet by logistics."
+    },
+
+    { "id": "trib-raw-internal", "source": "raw-materials-internal-inspection", "target": "raw-materials", "kind": "tributary", "status": "green", "annotation": "Goods-in inspection results are written directly into the raw materials record via the QC system integration." },
+    { "id": "trib-raw-supplier", "source": "raw-materials-supplier-inspection", "target": "raw-materials", "kind": "tributary", "status": "red", "annotation": "Supplier certificates of analysis are still emailed in PDF form and filed manually against the batch record. Automation scoped for next quarter." },
+    { "id": "trib-raw-machine-data", "source": "raw-materials-machine-data", "target": "raw-materials", "kind": "tributary", "status": "red", "annotation": "Goods-in handling equipment logs are stored locally on the machine and are not yet linked to batch records." },
+    { "id": "trib-raw-concessions", "source": "raw-materials-concessions", "target": "raw-materials", "kind": "tributary", "status": "green", "annotation": "Concession approvals raised against raw material batches flow automatically into the batch record." },
+    { "id": "trib-raw-dq", "source": "raw-materials-dq", "target": "raw-materials", "kind": "tributary", "status": "red", "annotation": "Data quality checks on incoming batch records are run ad hoc in a spreadsheet by the data team, not on a scheduled or automated basis." },
+    { "id": "trib-raw-technical-issues", "source": "raw-materials-technical-issues", "target": "raw-materials", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet linking raw material non-conformance reports back to the batch record, and no manual workaround is in place." },
+
+    { "id": "trib-cell-internal", "source": "cell-manufacturing-internal-inspection", "target": "cell-manufacturing", "kind": "tributary", "status": "red", "annotation": "In-process QC checks are logged on paper travelers and re-keyed at end of shift. Digitisation work is underway but not yet live." },
+    { "id": "trib-cell-machine-data", "source": "cell-manufacturing-machine-data", "target": "cell-manufacturing", "kind": "tributary", "status": "green", "annotation": "Cell line equipment telemetry streams automatically into the MES against each cell serial number." },
+    { "id": "trib-cell-concessions", "source": "cell-manufacturing-concessions", "target": "cell-manufacturing", "kind": "tributary", "status": "red", "annotation": "Cell line concessions are approved over email and filed manually; integration into the MES is in progress." },
+    { "id": "trib-cell-dq", "source": "cell-manufacturing-dq", "target": "cell-manufacturing", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet for automated data quality checks on cell manufacturing records." },
+    { "id": "trib-cell-technical-issues", "source": "cell-manufacturing-technical-issues", "target": "cell-manufacturing", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet linking cell line non-conformance tickets back to the cell record, and no manual workaround is in place." },
+
+    { "id": "trib-stack-internal", "source": "stack-assembly-internal-inspection", "target": "stack-assembly", "kind": "tributary", "status": "red", "annotation": "No inspection data pipeline exists for stack assembly yet, and no manual workaround is currently in place." },
+    { "id": "trib-stack-machine-data", "source": "stack-assembly-machine-data", "target": "stack-assembly", "kind": "tributary", "status": "red", "annotation": "Assembly line equipment logs data locally but it is not yet linked to stack build records." },
+    { "id": "trib-stack-concessions", "source": "stack-assembly-concessions", "target": "stack-assembly", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet for stack assembly concessions; deviations are currently tracked informally by the build team." },
+    { "id": "trib-stack-dq", "source": "stack-assembly-dq", "target": "stack-assembly", "kind": "tributary", "status": "red", "annotation": "No automated data quality checks exist yet for stack assembly build records." },
+    { "id": "trib-stack-technical-issues", "source": "stack-assembly-technical-issues", "target": "stack-assembly", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet linking stack assembly non-conformance tickets back to the build record, and no manual workaround is in place." },
+
+    { "id": "trib-test-internal", "source": "stack-test-internal-inspection", "target": "stack-test", "kind": "tributary", "status": "green", "annotation": "QC cross-check results flow automatically from the inspection station into the test rig data feed." },
+    { "id": "trib-test-internal-test-data", "source": "stack-test-internal-test-data", "target": "stack-test", "kind": "tributary", "status": "green", "annotation": "Test rig performance data is captured automatically for every test cycle and linked to the stack serial number." },
+    { "id": "trib-test-machine-data", "source": "stack-test-machine-data", "target": "stack-test", "kind": "tributary", "status": "green", "annotation": "Test rig equipment telemetry is captured automatically alongside every test result." },
+    { "id": "trib-test-concessions", "source": "stack-test-concessions", "target": "stack-test", "kind": "tributary", "status": "green", "annotation": "Test concessions are raised and approved directly in the test data system, fully linked to the stack record." },
+    { "id": "trib-test-dq", "source": "stack-test-dq", "target": "stack-test", "kind": "tributary", "status": "red", "annotation": "Data quality checks on test results are run manually by the analytics team on a weekly basis, not yet automated." },
+    { "id": "trib-test-technical-issues", "source": "stack-test-technical-issues", "target": "stack-test", "kind": "tributary", "status": "red", "annotation": "Test rig issue tickets are raised in a separate system that is not yet linked to the stack test record. Manual cross-referencing by the test team in the meantime." },
+
+    { "id": "trib-shipped-partner", "source": "shipped-in-field-partner-test-data", "target": "shipped-in-field", "kind": "tributary", "status": "red", "annotation": "Partner-run field test data is shared periodically as spreadsheet exports and is not yet linked to central lineage data." },
+    { "id": "trib-shipped-machine-data", "source": "shipped-in-field-machine-data", "target": "shipped-in-field", "kind": "tributary", "status": "red", "annotation": "In-field unit telemetry is not yet connected to central systems. No manual workaround is currently in place." },
+    { "id": "trib-shipped-concessions", "source": "shipped-in-field-concessions", "target": "shipped-in-field", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet for field concessions; field deviations are currently logged locally by the service team." },
+    { "id": "trib-shipped-dq", "source": "shipped-in-field-dq", "target": "shipped-in-field", "kind": "tributary", "status": "red", "annotation": "No pipeline exists yet for automated data quality checks on field data." },
+    { "id": "trib-shipped-technical-issues", "source": "shipped-in-field-technical-issues", "target": "shipped-in-field", "kind": "tributary", "status": "red", "annotation": "Field returns and technical issue reports are logged by the service team in a local tracker, then manually reviewed against shipped serial numbers." }
+  ]
+}
